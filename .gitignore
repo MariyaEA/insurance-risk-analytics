@@ -9,7 +9,9 @@ venv/
 .env
 
 # Data tracked by DVC
-data/
+data/*
+!data/.gitkeep
+!data/*.dvc
 
 # OS
 .DS_Store
