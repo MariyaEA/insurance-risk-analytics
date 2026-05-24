@@ -188,6 +188,19 @@ dvc push
 ```text
 localstorage: ~/dvc-storage
 ```
+## Key Visualizations
+
+### Province Loss Ratio Analysis
+
+![Loss Ratio](assets/loss_ratio_plot.png)
+
+### SHAP Feature Importance
+
+![SHAP Summary](assets/shap_summary.png)
+
+### Model Performance Comparison
+
+![Model Results](assets/model_results.png)
 
 ## Technologies Used
 
