@@ -144,6 +144,50 @@ dvc repro
 ```
 
 ---
+## DVC Reproducibility
+
+Pull dataset versions:
+
+```bash
+dvc pull
+```
+
+Reproduce pipeline:
+
+```bash
+dvc repro
+```
+
+---
+
+## Data Version Control with DVC
+
+This project uses DVC to version large dataset files while keeping Git lightweight.
+
+Tracked data files:
+
+- `data/insurance_data.csv`
+- `data/insurance_data_cleaned.csv`
+
+The actual data files are stored in a local DVC remote storage directory, while Git tracks only the `.dvc` metadata files.
+
+### Reproduce Data Setup
+
+```bash
+dvc pull
+```
+
+### Push Updated Data Versions
+
+```bash
+dvc push
+```
+
+### DVC Remote
+
+```text
+localstorage: ~/dvc-storage
+```
 
 ## Technologies Used
 
