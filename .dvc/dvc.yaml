@@ -1,0 +1,8 @@
+stages:
+  clean_data:
+    cmd: python src/run_cleaning.py
+    deps:
+      - data/insurance_data.csv
+      - src/feature_engineering.py
+    outs:
+      - data/insurance_data_cleaned.csv
